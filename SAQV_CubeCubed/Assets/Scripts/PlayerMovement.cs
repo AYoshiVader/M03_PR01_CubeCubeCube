@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -6,6 +8,13 @@ public class PlayerMovement : MonoBehaviour
     public float forwardForce = 2000f;
     public float sidewaysForce = 500f;
 
+    public void Initialize()
+    {
+        GameManager gameBehaviour = GameObject.Find("GameManager").GetComponent<GameManager>();
+        gameBehaviour.turningTime += TurnHandler;
+
+    }
+    
     // Update is called once per frame
     void FixedUpdate()
     {
@@ -25,4 +34,10 @@ public class PlayerMovement : MonoBehaviour
             FindObjectOfType<GameManager>().EndGame();
         }
     }
+
+    public void TurnHandler(int turnTarget)
+    {
+        UnityEngine.Debug.Log("Turning");
+    }
+
 }

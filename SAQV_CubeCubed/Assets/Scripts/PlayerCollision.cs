@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerCollision : MonoBehaviour
 {
     public PlayerMovement movement;
+    string turnTarget = null;
 
     private void OnCollisionEnter(Collision collisionInfo)
     {
@@ -12,6 +13,12 @@ public class PlayerCollision : MonoBehaviour
         {
             movement.enabled = false;
             FindObjectOfType<GameManager>().EndGame();
+        }
+
+        if(collisionInfo.collider.tag == "Turner")
+        {
+            turnTarget = collisionInfo.collider.name;
+            UnityEngine.Debug.Log("Turning" + turnTarget);
         }
     }
 }
