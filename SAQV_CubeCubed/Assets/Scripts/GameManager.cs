@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public GameObject completeLevelUI;
 
     public delegate void TurningEvent(int turnTarget);
-    public event TurningEvent turningTime;
+    public event TurningEvent TurningTime;
 
     public void CompleteLevel()
     {
@@ -34,6 +34,6 @@ public class GameManager : MonoBehaviour
 
     public void Turner(int turnDirection)
     {
-        turningTime(turnDirection);
+        TurningTime(turnDirection);
     }
 }
