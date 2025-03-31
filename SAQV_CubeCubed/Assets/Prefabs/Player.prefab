@@ -152,9 +152,10 @@ MonoBehaviour:
   sidewaysForce: 120
   direction: {x: 0, y: 0, z: 1}
   startDirection: {x: 0, y: 0, z: 1}
+  targetDirection: {x: 0, y: 0, z: 1}
   turning: -1
   turnSide: 0
-  turnSpeed: 90
+  turnSpeed: 3
   speedTransfer: 0
   gameBehaviour: {fileID: 0}
 --- !u!114 &5390243710047976315
