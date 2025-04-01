@@ -15,8 +15,7 @@ public class PlayerMovement : MonoBehaviour
     public int turnSide = 0;
     public float turnSpeed = 9f;
     public float speedTransfer;
-    public GameManager gameBehaviour;
-
+    
 
     // Update is called once per frame
     void FixedUpdate()
@@ -50,6 +49,10 @@ public class PlayerMovement : MonoBehaviour
         {
             TurnSide(turnTarget);
         }
+        else if (turnTarget == 2 || turnTarget == 3)
+        {
+            TurnZ(turnTarget);
+        }
     }
 
     public void TurnSide(int turnTarget)
@@ -68,5 +71,15 @@ public class PlayerMovement : MonoBehaviour
         direction = Quaternion.AngleAxis((2 * turnSpeed) * (turnTarget - 0.5f), Vector3.up) * direction;
         strafeDirection = Quaternion.AngleAxis((2 * turnSpeed) * (turnTarget - 0.5f), Vector3.up) * strafeDirection;
         rb.AddForce((targetDirection - startDirection) * speedTransfer, ForceMode.VelocityChange);
+    }
+
+    public void TurnZ(int turnTarget)
+    {
+        if(turning < 0)
+        {
+            startDirection = direction;
+            turning = 90f / turnSpeed;
+        }
+        UnityEngine.Debug.Log("Turning to the Y Axis, currently obsolete");
     }
 }
