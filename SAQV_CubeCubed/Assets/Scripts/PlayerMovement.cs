@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -35,10 +36,13 @@ public class PlayerMovement : MonoBehaviour
         {
             FindObjectOfType<GameManager>().EndGame();
         }
-        turning = turning - 1;
+        turning = turning - 1f;
         if (turning > 0)
         {
-            TurnSide(turnSide);
+            if (turnSide >= 0 && turnSide <= 3)
+            {
+                TurnSide(turnSide);
+            }
         }
     }
 

@@ -8,9 +8,9 @@ public class TurnControllerBehaviour : MonoBehaviour
     public GameManager gameManager;
     public PlayerMovement player;
     
-    void OnTriggerEnter()
+    void OnTriggerEnter(Collider collider)
     {
-        if (!triggered)
+        if (!triggered && collider.name.Equals("Player"));
         {
             player.TurnHandler(turnerID);
             triggered = true;
