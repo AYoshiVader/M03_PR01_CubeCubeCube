@@ -5,13 +5,10 @@ using TMPro;
 
 public class Score : MonoBehaviour
 {
-    public Transform player;
+    public Transform scorer;
     public TextMeshProUGUI scoreText;
-    float scoreValue = 0;
-
     void Update()
     {
-        scoreValue = player.position.z;
-        scoreText.text = scoreValue.ToString("0");
+        scoreText.text = scorer.position.z.ToString("0");
     }
 }

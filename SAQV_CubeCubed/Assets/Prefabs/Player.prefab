@@ -148,12 +148,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 5390243710047976305}
+  scoreKeeper: {fileID: 0}
   forwardForce: 8000
   sidewaysForce: 120
   direction: {x: 0, y: 0, z: 1}
   strafeDirection: {x: 1, y: 0, z: 0}
   startDirection: {x: 0, y: 0, z: 1}
-  targetDirection: {x: 0, y: 0, z: 1}
+  targetDirection: {x: -1, y: 0, z: 0}
   turning: -1
   turnSide: 0
   turnSpeed: 3
