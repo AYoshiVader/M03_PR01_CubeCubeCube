@@ -6,14 +6,14 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody rb;
-    public Rigidbody scoreKeeper;
+//    public Rigidbody scoreKeeper;
     public float forwardForce = 2000f;
     public float sidewaysForce = 500f;
     public Vector3 direction = Vector3.forward;
     public Vector3 strafeDirection = Vector3.right;
     public Vector3 startDirection = Vector3.forward;
     public Vector3 targetDirection = Vector3.forward;
-    public float turning = -1f;
+    public float turning = 0f;
     public int turnSide = 0;
     public float turnSpeed = 9f;
     public float speedTransfer;
@@ -23,14 +23,14 @@ public class PlayerMovement : MonoBehaviour
     {
         direction = Vector3.forward;
         strafeDirection = Vector3.right;
-        turning = -1f;
+        turning = 0f;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         rb.AddForce(direction * forwardForce * Time.deltaTime);
-        rb.AddForce(Vector3.forward * forwardForce * Time.deltaTime);
+//        rb.AddForce(Vector3.forward * forwardForce * Time.deltaTime);
 
         if (Input.GetKey("d"))
         {

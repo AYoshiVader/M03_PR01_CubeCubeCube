@@ -9,8 +9,9 @@ public class TurnControllerBehaviour : MonoBehaviour
     
     void OnTriggerEnter(Collider collider)
     {
-        if (!triggered && collider.name.Equals("Player"));
+        if (!triggered && collider.name.Equals("Player"))
         {
+            Debug.Log("Calling");
             player.TurnHandler(turnerID);
             triggered = true;
         }
