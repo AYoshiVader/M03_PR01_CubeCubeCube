@@ -766,6 +766,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7718972553274055905, guid: 276b4ef645d170843a72137157c4e75a, type: 3}
   m_PrefabInstance: {fileID: 1007217448}
   m_PrefabAsset: {fileID: 0}
+--- !u!54 &1007217450 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 1344589607856001623, guid: 276b4ef645d170843a72137157c4e75a, type: 3}
+  m_PrefabInstance: {fileID: 1007217448}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1044852254
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1761,6 +1766,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5390243710047976314, guid: 7a152af9964d3f245b0744a162804376, type: 3}
+      propertyPath: scoreKeeper
+      value: 
+      objectReference: {fileID: 1007217450}
     - target: {fileID: 5390243710047976314, guid: 7a152af9964d3f245b0744a162804376, type: 3}
       propertyPath: gameBehaviour
       value: 
