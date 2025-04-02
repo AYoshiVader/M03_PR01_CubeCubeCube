@@ -294,12 +294,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7978880525655492048, guid: df20fd001ab0dcd4c9d9762d11ac4a30, type: 3}
       propertyPath: m_Name
-      value: Left
+      value: Right
       objectReference: {fileID: 0}
     - target: {fileID: 8032752089128912729, guid: df20fd001ab0dcd4c9d9762d11ac4a30, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 5390243709856513623}
+    - target: {fileID: 8032752089128912729, guid: df20fd001ab0dcd4c9d9762d11ac4a30, type: 3}
+      propertyPath: turnerID
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1371,12 +1375,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7978880525655492048, guid: df20fd001ab0dcd4c9d9762d11ac4a30, type: 3}
       propertyPath: m_Name
-      value: Left
+      value: Right
       objectReference: {fileID: 0}
     - target: {fileID: 8032752089128912729, guid: df20fd001ab0dcd4c9d9762d11ac4a30, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 5390243709856513623}
+    - target: {fileID: 8032752089128912729, guid: df20fd001ab0dcd4c9d9762d11ac4a30, type: 3}
+      propertyPath: turnerID
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
