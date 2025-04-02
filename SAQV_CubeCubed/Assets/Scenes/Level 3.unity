@@ -367,6 +367,11 @@ Rigidbody:
   m_CorrespondingSourceObject: {fileID: 1344589607856001623, guid: 276b4ef645d170843a72137157c4e75a, type: 3}
   m_PrefabInstance: {fileID: 246743420}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &246743422 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7718972553274055905, guid: 276b4ef645d170843a72137157c4e75a, type: 3}
+  m_PrefabInstance: {fileID: 246743420}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &282281698
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1932,6 +1937,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 485917995}
+    - target: {fileID: 4995977574763658338, guid: f0f2ef525afa797448824d18f57333bd, type: 3}
+      propertyPath: scorer
+      value: 
+      objectReference: {fileID: 246743422}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2012,6 +2021,7 @@ SceneRoots:
   - {fileID: 418878629}
   - {fileID: 959525039}
   - {fileID: 5390243709856513622}
+  - {fileID: 246743420}
   - {fileID: 931808342859012101}
   - {fileID: 738149777}
   - {fileID: 1548197048}
@@ -2032,4 +2042,3 @@ SceneRoots:
   - {fileID: 1201343324}
   - {fileID: 4194828261409568659}
   - {fileID: 942040379}
-  - {fileID: 246743420}

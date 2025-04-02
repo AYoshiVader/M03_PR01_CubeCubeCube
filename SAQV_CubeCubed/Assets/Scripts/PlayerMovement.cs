@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody rb;
-//    public Rigidbody scoreKeeper;
+    public Rigidbody scoreKeeper;
     public float forwardForce = 2000f;
     public float sidewaysForce = 500f;
     public Vector3 direction = Vector3.forward;
@@ -30,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         rb.AddForce(direction * forwardForce * Time.deltaTime);
-//        rb.AddForce(Vector3.forward * forwardForce * Time.deltaTime);
+        scoreKeeper.AddForce(Vector3.forward * forwardForce * Time.deltaTime);
 
         if (Input.GetKey("d"))
         {
